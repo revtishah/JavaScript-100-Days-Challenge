@@ -1,5 +1,1 @@
-Heading 1
-=**100 Days of JavaScript Challenge**
-
-
-Welcome to the 100DaysOfCode Challenge in JavaScript.
+When we read texts – whether online, in a newspaper or a printed book – we expect a certain format. Particularly important words are set in bold, a heading stands out from the rest of the test, and a structured list makes the text clearer. We consider this formatting to be obvious – and when we write a text on the PC ourselves, we can usually do so without any problems: from adjusting the font size and adding bullet points to making words bold. Any word processing program offers users a wide range of options for arranging their text.
