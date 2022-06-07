@@ -17,5 +17,29 @@ async function connectionStatus() {
     image.src = "./images/online.png";
     setColor();
     return fetchResult.status >= 200 && fetchResult.status < 300;
-  } catch {}
+  } catch (error){
+    //console.log(error);
+    statusDisplay.textContent = "OOPS!! Your internet connection is down";
+    image.src = "./images/offline.png";
+    bgColor.classList.remove("online");
+  }
 }
+
+
+//Monitor the connection
+setInterval(async () => {
+  const result = await connectionStatus();
+  if(result){
+    statusDisplay.textContent = "You are online,Connection looks good";
+    setColor();
+  }
+},5000);
+
+//Check Connection when the page load
+window.addEventListener("load",async (event) =>{
+  if(connectionStatus()){
+    statusDisplay.textContent = "You are online";
+  }else{
+    statusDisplay.textContent = "You are offline";
+  }
+})

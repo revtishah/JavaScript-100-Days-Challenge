@@ -32,7 +32,7 @@ img{
 }
 
 section{
-    background-color: black;
+    background-color: rgb(184, 184, 184);
     height: 100vh;
     display: flex;
     justify-content: center;
